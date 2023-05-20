@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "This is a blog website, put programing article and record life. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [
+    "blog",
+    "npm",
+    "vitepress"
+  ],
+  "author": "Blackfloat",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vitepress": "^1.0.0-alpha.76"
+  },
+  "dependencies": {
+    "vuetify": "^3.3.0"
+  }
+}
