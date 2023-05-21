@@ -17,6 +17,8 @@
   "author": "Blackfloat",
   "license": "ISC",
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
+    "dayjs": "^1.11.7",
     "sass": "^1.62.1",
     "vite-plugin-vuetify": "^1.0.2",
     "vitepress": "^1.0.0-alpha.76"

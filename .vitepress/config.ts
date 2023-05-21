@@ -6,21 +6,13 @@ export default defineConfig({
   srcDir: './docs',
   title: "Lucian's blog",
   description: "Record my life in this, and share my programming experience.",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+      { text: 'Tags', link: '/tags' },
+      { text: 'About', link: '/about' }
     ],
 
     socialLinks: [

@@ -4,6 +4,8 @@ import Theme from 'vitepress/theme'
 import './style.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css' 
 
 export default {
   ...Theme,
@@ -14,6 +16,13 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     const vuetify = createVuetify({
+      icons: {
+        defaultSet: 'mdi',
+        aliases,
+        sets: {
+          mdi,
+        },
+      },
     });
 
     app.use(vuetify)
