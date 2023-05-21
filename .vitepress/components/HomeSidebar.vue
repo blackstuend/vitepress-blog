@@ -11,7 +11,7 @@ function goTagsPage(tag) {
 </script>
 <template>
   <div class="sidebar">
-    <img src="private/headShot.jpg" alt="headShot" class="sidebar__headShot">
+    <img src="/private/headShot.jpg" alt="headShot" class="sidebar__headShot">
     <h2 class="sidebar__title">
       Lucian 
     </h2>

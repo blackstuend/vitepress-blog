@@ -23,6 +23,10 @@ export default defineConfig({
     // https://vitejs.dev/config/
     plugins: [
       vuetify(),
-    ]
+    ],
+    ssr: {
+      // TODO: workaround until they support native ESM
+      noExternal: ['vuetify'],
+    },
   },
 })
