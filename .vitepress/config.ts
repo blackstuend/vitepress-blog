@@ -7,7 +7,6 @@ export default defineConfig({
   title: "Lucian's blog",
   description: "Record my life in this, and share my programming experience.",
   lastUpdated: true,
-  base: '/vitepress-blog/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
