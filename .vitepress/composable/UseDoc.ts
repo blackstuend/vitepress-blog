@@ -36,7 +36,7 @@ export function useDoc() {
   }
 
   rawList.sort((a,b)=>{
-    return dayjs(b.date).valueOf() - dayjs(b.date).valueOf()
+    return dayjs(b.date).valueOf() - dayjs(a.date).valueOf()
   })
 
   list.value = rawList
