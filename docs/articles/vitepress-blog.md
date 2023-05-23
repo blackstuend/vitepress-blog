@@ -5,7 +5,7 @@ tags: vue,vite
 ---
 
 # Vitepress 建立客製化 Blog
-vitepress 本身就是一個很好的文檔系統，但要建立自己的部落格通常還是透過 hexo 或是其他已經很成熟的 template 都是更為適合的選項，但也可以透過稍作修改將 vitepress 的 UI 設計成類似於部落格的形式，就可以使用到 vitepress 的那些優點，包含可使用 vue 的方式進行引入，以及自動化的路由對應都是非常方便的，[github](https://github.com/blackstuend/vitepress-blog)  
+vitepress 本身就是一個很好的文檔系統，但要建立自己的部落格通常還是透過 hexo 或是其他已經很成熟的 template 都是更為適合的選項，但也可以透過稍作修改將 vitepress 的 UI 設計成類似於部落格的形式，就可以使用到 vitepress 的那些優點，包含可使用 vue 的方式進行引入，以及自動化的路由對應都是非常方便的，以下有 [code](https://github.com/blackstuend/vitepress-blog)，也同時是這個網站的程式碼
 
 :::tip
 在建立成 blog 前建立先將 [vitepress 官方文件](https://vitepress.dev/)讀過，在閱讀會比較好理解，以防有些細節講解不清
