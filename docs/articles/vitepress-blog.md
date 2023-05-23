@@ -180,4 +180,4 @@ export function useDoc() {
 ```
 
 ## 結論
-這也不是第一次做 blog ，還記得第一次做 blog，還是用 express 搭配 bootstrap 再去買虛擬主機進行架設，在配置 database, let's encrypt SSL, nginx 相當繁雜但也很有趣，可以學到很多知識，後來知道有 hexo nuxt... 等等 ssg 來生成靜態網站來進行部屬都是相當方便，這一次 vitepress 雖然也是遇到不少坑，但相比之前遇到地確實是少得非常多了，而且 vitepress 本身的 UI/UX 就做得很漂亮了，花的成本遠比之前少太多了
+這也不是第一次做 blog ，還記得第一次做 blog，還是用 express 搭配 bootstrap 再去買虛擬主機進行架設，在配置 database, let's encrypt SSL, nginx 相當繁雜但也很有趣，可以學到很多知識，後來知道有 hexo nuxt... 等等 ssg 來生成靜態網站來進行部屬都是相當方便，這一次 vitepress 雖然也是遇到不少坑，但相比之前遇到地確實是少得非常多了，而且 vitepress 本身的 UI/UX 就做得很漂亮了，花的成本遠比之前少很多，算是非常好的一個工具
