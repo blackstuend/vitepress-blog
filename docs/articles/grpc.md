@@ -5,7 +5,7 @@ tags: nodejs,http
 ---
 
 # grpc 是什麼， node.js 實作
-GRPC 是 google 開發的一種 Remote Procedure Call(RPC) 框架，他可以讓服務與客戶端都是閱讀同一份文件(proto檔案)，而此 proto 檔案是由 ，且建立在 [HTTP 2.0]() 上，有更佳的傳輸數率，同時可以在多個語言上實作，如 go ruby nodejs python c#，官方都有充分的 Demo Code 可以參考，已下會使用 Nodejs 來紀錄我們學習過程
+GRPC 是 google 開發的一種 Remote Procedure Call(RPC) 框架，他可以讓服務與客戶端都是閱讀同一份文件(proto檔案)，而此 proto 檔案是由 ，且建立在 [HTTP 2.0](/articles/http-generation.html) 上，有更佳的傳輸數率，同時可以在多個語言上實作，如 go ruby nodejs python c#，官方都有充分的 Demo Code 可以參考，已下會使用 Nodejs 來紀錄我們學習過程
 
 ## 觀念
 在 grpc 接口中客戶端可以直接呼叫 API method，而不需要項傳統後端提供的 API 文建照著 endpoint 與 路徑來撰寫，只需要服務端先定義好客戶端所需使用的接口，再將定義的接口經過編譯轉換成客戶使用的語言，就可以直接呼叫，可參考以下的圖他們都是透過同一份文件(proto)進行溝通的，不管是在哪個裝置都可以很容易地進行使用
