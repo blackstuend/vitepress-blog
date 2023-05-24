@@ -267,3 +267,8 @@ server.addService(todoProto.TodoService.service, {
 
 ## 結論
 在使用 grpc 時，研究了滿久包含他的 buffer protocol 該怎麼寫，裡面也可以寫成 enum 的形式和各種參數怎麼解析，還有 http2.0 是什麼，為何要使用等等的，接觸到的知識算是滿廣，寫法算是滿方便的尤其是不需要再額外寫 swagger 真的是很方便，但是在 nodejs 上使用還是並不是很好用，在使用 node 開發也遇到些問題不像 go lang 有很好的提示再寫的時候有點黑箱作業，裡面要帶什麼樣的參數其實還是寫得很 free，沒有 interface 的界定寫起來有點怕怕的，目前大多還是作用在 micro service 上，服務間互傳較多
+
+## 參考文件
+* [[gRPC] gRPC Getting Started](https://pjchender.dev/golang/grpc-getting-started/)
+* [gRPC official](https://grpc.io/)
+* [Buffer Protocol v3](https://protobuf.dev/programming-guides/proto3/)
