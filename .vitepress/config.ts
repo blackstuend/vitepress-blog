@@ -14,7 +14,7 @@ export default defineConfig({
       { text: 'Tags', link: '/tags' },
       { text: 'About', link: '/about' }
     ],
-
+    
     socialLinks: [
       { icon: 'github', link: 'https://github.com/blackstuend' }
     ]
