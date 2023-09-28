@@ -19,6 +19,7 @@ Although today is not the latest day in 2023, but I think I get so many change i
 4. Don't be hasty
 5. Be yourself more
 6. Don't be too stubborn, before I know this opinion I do something I always want to find the best way to do that, but It's very difficult because in this world who can define this is a best way only best appropriately way in this situation.  
+7. Don't always care about the profit and efficiency
 
 ## New Habit
 1. Learning english(so this article use english to write)
