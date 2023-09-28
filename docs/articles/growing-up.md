@@ -10,7 +10,7 @@ Although today is not the latest day in 2023, but I think I get so many change i
 ## What make me be different
 * Definitely is by insert the enough protein, before I do that, I often feel tried and depress, but sometimes was good, I want to resolve this problem for a long time, until a co-work invite me to fitness with him, then I try to insert the protein powder for a long time, and my brain and brain are be improve.
 
-* And I ever went to psychology clinic check what happen in my mental, the docker said you have the GAD(Generalized Anxiety Disorder), tell me don't give yourself more pressure, if meet the problem just ask somebody it's ok, but I never try this, but in one day, I try to change my opinion.
+* And I ever went to psychology clinic check what happen in my mental, the docker said you have the GAD(Generalized Anxiety Disorder), tell me don't give yourself more pressure, if meet the problem just ask somebody it's ok, but I never try this, but in one day, I try to change my opinion, and I never feel depress, and be myself again.
 
 ## Opinion Change
 1. Don't afraid of make the mistake
