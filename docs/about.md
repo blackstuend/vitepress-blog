@@ -1,3 +1,5 @@
 # About
 
-金門大學資訊工程畢業，目前從事前端大約兩年多的經驗，還是菜菜的前端工程師，平時喜歡打球
+My name is Lucian, I'm be frontend engineer for two years, my interests are play basketball, learn english, fitness.
+ 
+In the recent, I focus on learn english and fitness two things.
