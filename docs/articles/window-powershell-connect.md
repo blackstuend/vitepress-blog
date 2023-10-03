@@ -1,6 +1,6 @@
 ---
 title: Windows Remote to Powershell occur 401 Unauthorized
-description: 
+description: When I want to use the python tool([pywinrm](https://pypi.org/project/pywinrm/)) to check the server still alive, and check server still can connect, but I got the error message `401 Unauthorized`.
 tags: devops
 ---
 
