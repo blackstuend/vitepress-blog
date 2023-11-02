@@ -1,10 +1,10 @@
 ---
-title: ansible 在 Docker 上進行部屬
+title: Ansible 在 Docker 上進行部屬
 description: 部屬多台環境最常使用就是 ansible，但是在 gitlab-ci 中常常會使用到 docker 的 runner 來進行部屬，且不希望汙染到 runner 本身的環境，以下會介紹在 docker 上進行部屬 ansible 的作法
 tags: devops
 ---
 
-# ansible 在 Docker 上進行部屬
+# Ansible 在 Docker 上進行部屬
 部屬多台環境最常使用就是 ansible，但是在 gitlab-ci 中常常會使用到 docker 的 runner 來進行部屬，且不希望汙染到 runner 本身的環境，以下會介紹在 docker 上進行部屬 ansible 的作法
 
 ## Ansible Docker Image
