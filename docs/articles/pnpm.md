@@ -81,7 +81,7 @@ $ pnpm dev
 ```
 
 ::: info
-可以看到 node_modules 變得乾淨許多，第一層只出現一個 express 的資料夾，且 ls -al 看一下資料夾結構，可以看到下方的 express 使用軟連結，連結至 .pnpm/express@4.18.2/node_modules/express，解決了重複的 dependency 問題，且在 .pnpm 裡面會將不同版本的 dependency 都放在不同的資料夾，也解決了相同套件不能版本導致巢狀過深問題
+可以看到 node_modules 變得乾淨許多，第一層只出現一個 express 的資料夾，且 ls -al 看一下資料夾結構，可以看到下方的 express 使用軟連結，連結至 .pnpm/express@4.18.2/node_modules/express，解決了重複的 dependency 問題，且在 .pnpm 裡面會將不同版本的 dependency 都放在不同的資料夾，也解決了相同套件不同版本導致巢狀過深問題
 :::
 
 ```bash
@@ -97,7 +97,7 @@ lrwxrwxrwx 1 user1 197121   66 Nov  3 17:31 express -> '/d/test/node_modules/.pn
 * 雖上述以可提升許多安裝速度，但 pnpm 還有快取功能會將以前安裝過的都放置到快取的位置中
 
 ### 查看 pnpm 快取的路徑
-前去查看 store 的路徑，可以看到下方一堆亂碼，在進入隨便一個資料夾可看到許多被 hash 過的檔案，那些都是我們的原始 node_modules 的 資料，而 pnpm 會將之前所有下載過的 package 都放置在這裡，再使用硬連結的方式放置對應的資料夾下，而不用像 npm 都是使用複製的方式，可以更加快速，且統一管理不會每一開一個專案都增加一次 node_modules 的大小
+前去查看 store 的路徑，可以看到下方一堆亂碼，在進入隨便一個資料夾可看到許多被 hash 過的檔案，那些都是我們的原始 node_modules 的 資料，而 pnpm 會將之前所有下載過的 package 都放置在這裡，再使用硬連結的方式放置對應的資料夾下，而不用像 npm 都是使用複製的方式，可以更加快速，且統一管理不會每一次開一個專案都增加一次 node_modules 的大小
 
 ```bash
 $ pnpm store path
