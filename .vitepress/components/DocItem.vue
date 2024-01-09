@@ -1,45 +1,56 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress';
-import { IArticle } from '../composable/UseDoc';
+import { useRouter } from 'vitepress'
+import { IArticle } from '../composable/UseDoc'
 const props = defineProps<{
   doc: IArticle
 }>()
 
-const router = useRouter();
+const router = useRouter()
 
-function goTagsPage(tag: string) {
-  router.go('tags?tag=' + tag);
+function goTagsPage (tag: string) {
+  router.go('tags?tag=' + tag)
 }
 
-function goArticlePage() {
-  router.go(props.doc.path);
+function goArticlePage () {
+  router.go(props.doc.path)
 }
 </script>
 
 <template>
-  <div class="card" @click="goArticlePage">
+  <div
+    class="card"
+    @click="goArticlePage"
+  >
     <h2 class="card__title">
       {{ doc.title }}
     </h2>
     <p class="card__desc">
-      {{ doc.desc}}
+      {{ doc.desc }}
     </p>
     <div class="card__footer">
       <span class="card__footer__item">
-        <v-icon  icon="mdi-clock" />
-        {{  doc.date }}
+        <v-icon icon="mdi-clock" />
+        {{ doc.date }}
       </span>
-      
-      <span class="card__footer__item" v-if="doc.tags?.length">
+
+      <span
+        v-if="doc.tags?.length"
+        class="card__footer__item"
+      >
         <v-icon icon="mdi-tag" />
-        <span class="card__footer__tag" v-for="tag in doc.tags" :key="tag" @click.stop="goTagsPage(tag)">
+        <span
+          v-for="tag in doc.tags"
+          :key="tag"
+          class="card__footer__tag"
+          @click.stop="goTagsPage(tag)"
+        >
           {{ tag }}
         </span>
       </span>
     </div>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .card {
   cursor: pointer;
   padding: 20px;
@@ -48,7 +59,13 @@ function goArticlePage() {
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
+
+  @media (prefers-color-scheme: dark) {
+    &:hover {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+  }
+
   &__title {
     font-size: 1.5rem;
     font-weight: bold;

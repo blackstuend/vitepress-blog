@@ -6,7 +6,7 @@ import { generateSitemap } from 'sitemap-ts'
 export default defineConfig({
   srcDir: './docs',
   title: "Lucian's blog",
-  description: "Record my life in this, and share my programming experience.",
+  description: 'Record my life in this, and share my programming experience.',
   lastUpdated: true,
   themeConfig: {
     search: {
@@ -23,7 +23,7 @@ export default defineConfig({
       { text: 'Tags', link: '/tags' },
       { text: 'About', link: '/about' }
     ],
-    
+
     socialLinks: [
       { icon: 'github', link: 'https://github.com/blackstuend' }
     ]
@@ -31,17 +31,17 @@ export default defineConfig({
   vite: {
     // https://vitejs.dev/config/
     plugins: [
-      vuetify(),
+      vuetify()
     ],
     ssr: {
       // TODO: workaround until they support native ESM
-      noExternal: ['vuetify'],
-    },
+      noExternal: ['vuetify']
+    }
   },
-  buildEnd({ outDir }) {
+  buildEnd ({ outDir }) {
     generateSitemap({
       hostname: 'https://blackfloat.club/',
-      outDir,
+      outDir
     })
-  },
+  }
 })

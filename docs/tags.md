@@ -3,7 +3,7 @@ layout: home
 ---
 
 <script lang="ts" setup>
-import Tags from '../.vitepress/components/Tags.vue'
+import Tags from '../.vitepress/pages/MainTags.vue'
 </script> 
 
 

@@ -1,0 +1,17 @@
+{
+  // set default tsconfig.json
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["vite/client"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue", "**/*.js"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "references": [
+  ],
+}

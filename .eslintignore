@@ -1,0 +1,5 @@
+# Ignore all files in the node_modules directory
+node_modules/
+
+# But do not ignore .vitepress files
+!.vitepress/

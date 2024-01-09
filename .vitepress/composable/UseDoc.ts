@@ -1,5 +1,5 @@
-import { ref } from 'vue';
-import dayjs from 'dayjs';
+import { ref } from 'vue'
+import dayjs from 'dayjs'
 
 export interface IArticle {
   title: string
@@ -10,18 +10,18 @@ export interface IArticle {
   category: string
 }
 
-export function useDoc() {
-  const articles = import.meta.glob('../../docs/articles/*.md', { eager : true})
-  
+export function useDoc () {
+  const articles = import.meta.glob('../../docs/articles/*.md', { eager: true })
+
   const list = ref<IArticle[]>([])
 
-  const rawList:IArticle[] = [];
-  for(const file in articles) {
+  const rawList:IArticle[] = []
+  for (const file in articles) {
     const info = articles[file].__pageData
 
     const tagsString = info.frontmatter.tags
     let tags = []
-    if(tagsString) {
+    if (tagsString) {
       tags = tagsString.split(',')
     }
 
@@ -35,7 +35,7 @@ export function useDoc() {
     })
   }
 
-  rawList.sort((a,b)=>{
+  rawList.sort((a, b) => {
     return dayjs(b.date).valueOf() - dayjs(a.date).valueOf()
   })
 
@@ -55,11 +55,9 @@ export function useDoc() {
     categories.value.add(item.category)
   })
 
-
-
   return {
     list,
     tags,
-    categories,
+    categories
   }
 }

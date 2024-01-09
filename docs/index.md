@@ -3,7 +3,7 @@ layout: home
 ---
 
 <script lang="ts" setup>
-import Home from '../.vitepress/components/Home.vue'
+import Home from '../.vitepress/pages/MainHome.vue'
 </script> 
 
 

@@ -1,44 +1,48 @@
 <script lang="ts" setup>
-import { useDoc } from '../composable/UseDoc';
-import { useRouter } from 'vitepress';
+import { useDoc } from '../composable/UseDoc'
+import { useRouter } from 'vitepress'
 
-const router = useRouter();
-const { tags,list } = useDoc();
+const router = useRouter()
+const { tags, list } = useDoc()
 
-function goTagsPage(tag) {
-  router.go('tags?tag=' + tag);
+function goTagsPage (tag) {
+  router.go('tags?tag=' + tag)
 }
 </script>
 <template>
   <div class="sidebar">
-    <img src="/private/headShot.jpg" alt="headShot" class="sidebar__headShot">
+    <img
+      src="/private/headShot.jpg"
+      alt="headShot"
+      class="sidebar__headShot"
+    >
     <h2 class="sidebar__title">
-      Lucian 
+      Lucian
     </h2>
     <div class="sidebar__attr">
       <div class="sidebar__attr__item">
         {{ list.length }}<br>
         文章
       </div>
-      <v-divider vertical></v-divider>
+      <v-divider vertical />
       <div class="sidebar__attr__item">
-        {{  tags.size }}<br>
+        {{ tags.size }}<br>
         標籤
       </div>
     </div>
     <h2 class="sidebar__title">
-      標籤 
+      標籤
     </h2>
-    <v-divider class="mb-5"></v-divider>
+    <v-divider class="mb-5" />
     <div class="sidebar__tags">
       <v-chip-group
         selected-class="text-primary"
         column
       >
         <v-chip
-          @click="goTagsPage(tag)"
           v-for="tag in tags"
           :key="tag"
+          @click="goTagsPage(tag)"
         >
           {{ tag }}
         </v-chip>

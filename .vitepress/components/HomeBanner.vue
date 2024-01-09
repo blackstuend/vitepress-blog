@@ -5,7 +5,7 @@
         Lucian's Blog
       </h2>
       <p class="banner__intro">
-        Do better, be better.
+        Welcome to my blog
       </p>
     </div>
   </div>
@@ -21,13 +21,12 @@
   justify-content: center;
   align-items: center;
 
-
   &__title {
     color: white;
     font-size: 3rem;
     text-align: center;
   }
- 
+
   //  讓 intro 產生打字效果且有閃爍的光標
   &__intro {
     color: white;
