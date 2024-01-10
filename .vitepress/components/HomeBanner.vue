@@ -5,7 +5,7 @@
         Lucian's Blog
       </h2>
       <p class="banner__intro">
-        Welcome to my blog
+        Record my experience and what I think and learn.
       </p>
     </div>
   </div>
