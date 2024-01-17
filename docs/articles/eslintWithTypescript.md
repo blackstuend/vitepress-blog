@@ -1,7 +1,7 @@
 ---
 title: Set ESLint and Prettier Together with TypeScript in Vue.js
 description: In my previous experiences, I often encountered conflicts when setting up ESLint and Prettier, mainly because both tools have settings related to code style, such as indentation, commas, etc. Resolving these conflicts requires an understanding of every setting in both linting tools.
-tags: nodejs, frontend
+tags: nodejs,frontend
 ---
 
 # Set ESlint and prettier together with typescript in Vue.js
